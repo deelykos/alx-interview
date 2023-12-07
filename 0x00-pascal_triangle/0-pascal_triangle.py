@@ -19,7 +19,8 @@ def pascal_triangle(n):
     Note:
         - If n is less than or equal to 0, an empty list is returned.
         - The triangle is constructed based on the principle that
-          each number is the sum of the two numbers directly above it in the row above.
+          each number is the sum of the two numbers directly
+          above it in the row above.
     """
     if n <= 0:
         return []
