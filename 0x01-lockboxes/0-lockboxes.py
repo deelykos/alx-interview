@@ -15,21 +15,30 @@ def canUnlockAll(boxes):
     - bool: True if all boxes can be opened, False otherwise.
     """
 
-    # Set to keep track of visited boxes
-    visited = set()
-    # Stack to perform depth-first search
-    stack = [0]
+    # Number of boxes
+    n = len(boxes)
 
-    while stack:
-        current_box = stack.pop()
+    # Set to keep track of seen boxes
+    seen_boxes = {0}
 
-        # If the current box has not been visited
-        if current_box not in visited:
-            # Mark the box as visited
-            visited.add(current_box)
-            
-            # Add keys from the current box to the stack
-            stack.extend(boxes[current_box])
+    # Set of unseen boxes initially excluding the first box
+    unseen_boxes = set(boxes[0]).difference({0})
 
-    # Check if all boxes have been visited
-    return len(visited) == len(boxes)
+    while len(unseen_boxes) > 0:
+        # Pop a box index from the set of unseen boxes
+        boxIdx = unseen_boxes.pop()
+
+        # Check if the box index is valid
+        if not (0 <= boxIdx < n):
+            continue
+
+        # Check if the box has not been seen
+        if boxIdx not in seen_boxes:
+            # Add keys from the current box to the set of unseen boxes
+            unseen_boxes = unseen_boxes.union(boxes[boxIdx])
+
+            # Mark the current box as seen
+            seen_boxes.add(boxIdx)
+
+    # Check if all boxes have been seen
+    return n == len(seen_boxes)
