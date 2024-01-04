@@ -27,9 +27,7 @@ def validUTF8(data):
     mask2 = 1 << 6
 
     for i in data:
-
         mask_n_byte = 1 << 7
-
         if number_bytes == 0:
             # Count number of bytes the UTF-8 Character will have
             while mask_n_byte & i:
