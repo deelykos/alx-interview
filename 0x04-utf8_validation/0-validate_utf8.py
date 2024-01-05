@@ -59,5 +59,4 @@ def validUTF8(data):
     # All characters were verified correctly with their proper byte count
     if number_bytes == 0:
         return True
-
     return False
