@@ -17,7 +17,7 @@ Understanding how to perform prime factorization is crucial since the problem ca
 Knowing how to approach problems from an optimization perspective can be useful in finding the most efficient solution.
 [How to optimize Python code](https://intranet.alxswe.com/rltoken/98ZF5bRckUKror6pGJQlHQ)
 
-###Greedy Algorithms:
+### Greedy Algorithms:
 
 The problem can also be approached with greedy algorithms, choosing the best option at each step.
 [Greedy Algorithms (GeeksforGeeks)](https://intranet.alxswe.com/rltoken/k6-mba0b4nayJi0VqYhKjQ)
