@@ -1,11 +1,11 @@
 # 0x02-minimum_operations
 For this project, you will need to understand several key algorithmic and mathematical concepts to devise a solution that efficiently calculates the minimum number of operations to achieve a given number of characters using only “Copy All” and “Paste” operations. Here is a list of concepts and resources that will be helpful:
 
-Concepts Needed:
-Dynamic Programming:
+## Concepts Needed:
+### Dynamic Programming:
 
 Familiarity with dynamic programming can help in breaking down the problem into simpler subproblems and building up the solution.
-Dynamic Programming (GeeksforGeeks)
+[Dynamic Programming (GeeksforGeeks)](https://intranet.alxswe.com/rltoken/l3JYgicNQw2Ue1Kg9jV80Q)
 Prime Factorization:
 
 Understanding how to perform prime factorization is crucial since the problem can be reduced to finding the sum of the prime factors of the target number n.
